@@ -6,11 +6,6 @@
       <th>First name</th>
       <th>Last name</th>
       <th>Number of additional guests</th>
-      <th>Address 1</th>
-      <th>Address 2</th>
-      <th>City</th>
-      <th>State</th>
-      <th>Postal code</th>
 
       <th></th>
     </tr>
@@ -21,11 +16,6 @@
       <td><%= registration.first_name %></td>
       <td><%= registration.last_name %></td>
       <td><%= registration.number_of_additional_guests %></td>
-      <td><%= registration.address_1 %></td>
-      <td><%= registration.address_2 %></td>
-      <td><%= registration.city %></td>
-      <td><%= registration.state %></td>
-      <td><%= registration.postal_code %></td>
 
       <td class="text-right">
         <%= link "Show", to: registration_path(@conn, :show, registration), class: "btn btn-default btn-xs" %>
