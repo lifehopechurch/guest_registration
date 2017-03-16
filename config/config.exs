@@ -7,7 +7,13 @@ use Mix.Config
 
 # General application configuration
 config :guest_registration,
-  ecto_repos: [GuestRegistration.Repo]
+  ecto_repos: [GuestRegistration.Repo],
+  admin_auth:
+    [
+      username: "admin",
+      password: System.get_env("ADMIN_AUTH_PW") || "admin",
+      realm: "Admin Area"
+    ]
 
 # Configures the endpoint
 config :guest_registration, GuestRegistration.Endpoint,
@@ -21,6 +27,7 @@ config :guest_registration, GuestRegistration.Endpoint,
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
   metadata: [:request_id]
+
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.

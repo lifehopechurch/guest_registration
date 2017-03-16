@@ -1,5 +1,6 @@
 defmodule GuestRegistration.RegistrationController do
   use GuestRegistration.Web, :controller
+  plug BasicAuth, use_config: {:guest_registration, :admin_auth}
 
   alias GuestRegistration.Registration
 

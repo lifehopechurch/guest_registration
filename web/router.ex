@@ -16,7 +16,9 @@ defmodule GuestRegistration.Router do
   scope "/", GuestRegistration do
     pipe_through :browser # Use the default browser stack
 
-    get "/", PageController, :index
+    get "/", WelcomeController, :new
+    post "/", WelcomeController, :create
+    get "/thanks", WelcomeController, :thanks
     resources "/registrations", RegistrationController
   end
 

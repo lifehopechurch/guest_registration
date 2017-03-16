@@ -18,6 +18,14 @@
   </li>
 
   <li>
+    <strong>Phone:</strong>
+    <%= @registration.phone_number %>
+  </li>
+  <li>
+    <strong>Email:</strong>
+    <%= @registration.email_address %>
+  </li>
+  <li>
     <strong>Address 1:</strong>
     <%= @registration.address_1 %>
   </li>

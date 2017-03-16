@@ -1,0 +1,7 @@
+<h1>Thanks!</h1>
+<script>
+function nextRegistration(){
+  window.location = "/"
+}
+setTimeout(nextRegistration, 5000)
+</script>
