@@ -3,13 +3,8 @@
 <ul>
 
   <li>
-    <strong>First name:</strong>
-    <%= @registration.first_name %>
-  </li>
-
-  <li>
-    <strong>Last name:</strong>
-    <%= @registration.last_name %>
+    <strong>Family name:</strong>
+    <%= @registration.family_name %>
   </li>
 
   <li>

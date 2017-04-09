@@ -3,7 +3,7 @@ defmodule GuestRegistration.RegistrationTest do
 
   alias GuestRegistration.Registration
 
-  @valid_attrs %{address_1: "some content", address_2: "some content", city: "some content", first_name: "some content", last_name: "some content", number_of_additional_guests: 42, postal_code: "some content", state: "some content"}
+  @valid_attrs %{address_1: "some content", address_2: "some content", city: "some content", family_name: "some content", number_of_additional_guests: 42, postal_code: "some content", state: "some content"}
   @invalid_attrs %{}
 
   test "changeset with valid attributes" do

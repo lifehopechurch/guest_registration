@@ -6,18 +6,11 @@
   <% end %>
 
   <div class="row">
-    <div class="col-md-5">
+    <div class="col-md-12">
       <div class="form-group">
-        <%= label f, :first_name, class: "control-label" %>
-        <%= text_input f, :first_name, class: "form-control" %>
-        <%= error_tag f, :first_name %>
-      </div>
-    </div>
-    <div class="col-md-7">
-      <div class="form-group">
-        <%= label f, :last_name, class: "control-label" %>
-        <%= text_input f, :last_name, class: "form-control" %>
-        <%= error_tag f, :last_name %>
+        <%= label f, :family_name, class: "control-label" %>
+        <%= text_input f, :family_name, class: "form-control" %>
+        <%= error_tag f, :family_name %>
       </div>
     </div>
   </div>
@@ -30,18 +23,50 @@
         <%= error_tag f, :number_of_additional_guests %>
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="form-group">
-        <%= label f, :phone_number, class: "control-label" %>
-        <%= telephone_input f, :phone_number, class: "form-control" %>
-        <%= error_tag f, :phone_number %>
-      </div>
-    </div>
     <div class="col-md-6">
       <div class="form-group">
         <%= label f, :email_address, class: "control-label" %>
         <%= email_input f, :email_address, class: "form-control" %>
         <%= error_tag f, :email_address %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <p>
+        I do hereby release LifeHope Community Church and all authorized employees,
+        associates, or individuals from any liability for any injuries that may occur
+        to my child, or children in my care, due to participation in any activity
+        on or about the property of LifeHope Community Church. I agree that neither
+        myself, my spouse, or other person shall bring, commence, prosecute or
+        maintain any cause of action, in my behalf or in bahalf of the child or
+        children partaking in the activity. I further agree that I shall not enforce,
+        attempt to enforce, prosecute, or recover upon any claim or right of claim
+        or right of action which I may have, or may hereafter assert, in any way
+        connected with the activities provided, nor will I allow anyone claiming
+        through me to enforce, attempt to enforce, prosecute or recover upon said
+        claim or right of action. I also understand that random pictures of this
+        event are taken and my child's picture may be posted to LHCC's website.
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="checkbox">
+        <label><%= checkbox f, :agree_to_terms %>Agree to terms</label>
+        <%= error_tag f, :agree_to_terms %>
+      </div>
+
+    </div>
+  </div>
+
+<!--
+  <div class="row">
+    <div class="col-md-4">
+      <div class="form-group">
+        <%= label f, :phone_number, class: "control-label" %>
+        <%= telephone_input f, :phone_number, class: "form-control" %>
+        <%= error_tag f, :phone_number %>
       </div>
     </div>
   </div>
@@ -79,7 +104,7 @@
         <%= error_tag f, :postal_code %>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
 

@@ -3,8 +3,7 @@
 <table class="table">
   <thead>
     <tr>
-      <th>First name</th>
-      <th>Last name</th>
+      <th>Family name</th>
       <th>Number of additional guests</th>
 
       <th></th>
@@ -13,8 +12,7 @@
   <tbody>
 <%= for registration <- @registrations do %>
     <tr>
-      <td><%= registration.first_name %></td>
-      <td><%= registration.last_name %></td>
+      <td><%= registration.family_name %></td>
       <td><%= registration.number_of_additional_guests %></td>
 
       <td class="text-right">
