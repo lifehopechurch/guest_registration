@@ -4,7 +4,6 @@ defmodule GuestRegistration.WelcomeController do
   alias GuestRegistration.Registration
 
   def new(conn, _params) do
-    IEx.pry
     changeset = Registration.changeset(%Registration{})
     render(conn, "new.html", changeset: changeset)
   end
